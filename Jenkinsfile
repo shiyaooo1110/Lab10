@@ -43,10 +43,11 @@ pipeline {
     }
 
     post {
-        always {
-            echo 'Cleaning up workspace'
-            deleteDir()
-        }
+        // clear all the artifacts
+        // always {
+        //     echo 'Cleaning up workspace'
+        //     deleteDir()
+        // }
         success {
             echo 'Build succeeded!!!'
         }
